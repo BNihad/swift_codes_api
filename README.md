@@ -21,6 +21,7 @@ Designed as part of the 2025 intern exercise.
 
 ### 1. Clone the repository
 
+```bash
 git clone https://github.com/your-username/swift-codes-api.git
 cd swift-codes-api
 2. Configure environment (if needed)
