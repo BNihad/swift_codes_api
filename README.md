@@ -24,8 +24,8 @@ git clone https://github.com/NihadBabazade/swift-codes-api.git
 cd swift-codes-api
 ```
 ### 🛠️ 2. Configure Application Properties
-```bash
 Edit src/main/resources/application.properties:
+```bash
 spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
 spring.datasource.username=postgres
 spring.datasource.password=your_password
@@ -43,14 +43,14 @@ http://localhost:8080/api
 
 ### 📫 API Endpoints
 
-GET /v1/swift-codes/{swiftCode}
+- **URL:** `/v1/swift-codes/{swiftCode}`
 Returns full details for a specific SWIFT code.
 Includes branch list if it's a headquarters.
 
-GET /v1/swift-codes/country/{countryISO2}
+- **URL:** `/v1/swift-codes/country/{countryISO2}`
 Returns all SWIFT codes (HQ + branches) for a specific country.
 
-POST /v1/swift-codes
+- **URL:** `/v1/swift-codes`
 Adds a new SWIFT code to the database.
 Request Body:
  ```json
@@ -63,7 +63,7 @@ Request Body:
   "isHeadquarter": true
 }
  ```
-DELETE /v1/swift-codes/{swiftCode}
+- **URL:** `/v1/swift-codes/{swiftCode}`
 Deletes a SWIFT code entry by code.
 
 ## ✅ Testing
